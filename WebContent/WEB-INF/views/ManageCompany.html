@@ -1,0 +1,183 @@
+<html>
+	<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Manage Company</title>
+      <link rel="stylesheet" href="ManageCompanyStyle.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+	
+	<body>
+		 <nav id="sidebar">
+             <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+            <div class="sidebar-header">
+                <h2>Admin Features</h2>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a id="sidebarA" href="#">Import Data</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">Manage Company</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">Manage Exchange</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">IPO Details</a>
+                </li>
+				<li><button type="button" class="btn btn-dark" style="color:black;">Logout</button> </li>
+            </ul>
+      </nav>
+      <div class="wrapper">
+            <header>
+			
+
+                  <nav id="header1">
+                    </button>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo" style="color:white;">
+                              Stock Exchange
+                        </div>
+
+                        <div class="menu">
+
+                              <ul>
+                                    <li><a href="#">Import Data</a></li>
+                                    <li><a href="#">Manage Company</a></li>
+                                    <li><a href="#">Manage Exchange</a></li>
+                                    <li><a href="#">IPO Details</a></li>
+									<li><button type="button" class="btn btn-dark">Logout</button> </li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+           
+
+
+
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('#dismiss').on('click', function () {
+            // hide sidebar
+            $('#sidebar').removeClass('active');
+        });
+
+            $(".menu-icon").on("click", function() {
+                  /*$("nav ul").toggleClass("showing");*/
+            $('#sidebar').toggleClass('active');
+            });
+      });
+      </script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div id="container">
+	  <div class="row">
+		<div id ="left-import-cell" class="col-sm-12 col-md-6">
+		<h3>Create New Company</h3>
+	<hr/>
+	
+	
+	<form>
+	<div class="container-fluid"> 
+            <div class="row" class="i-am-centered">
+                <div style="text-align:right" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                   <p id="pid">CompanyName:</p>
+					<p id="pid">Ceo :</p>
+					<p id="pid">Board of member name:</p>
+					<p id="pid">TurnOver:</p>
+					<p id="pid">Stock Exchnage Listed In:</p>
+					<p id="pid">Brief:</p>
+					<p id="pid">Sector:</p>
+					<p id="pid">Stock Code:</p>
+				   
+				   
+                </div>
+            <div style="text-align:left" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				
+				<input type="text" name="cname" placeholder="CompanyName"/><br><br>
+				<input type="text" name="ceoname" placeholder="CeoName"/><br><br>
+				<input type="text" name="bodname" placeholder="BodName"/><br><br>
+				<input type="text" name="turnover" placeholder="Turnover"/><br><br>
+				<input type="text" name="StockExchnageListed" placeholder="Stock Exchnage Listed In"/><br><br>
+				<input type="text" name="Brief" placeholder="Brief"/><br><br>
+				<input type="text" name="sector" placeholder="Sector"/><br><br>
+				<input type="text" name="Stock_Code" placeholder="Stock Code"/><br><br>
+				<br><br>
+				<input type="submit" value="Submit"/>
+                </div>
+            </div>
+        </div>
+		</form>
+			</div>
+			<div id ="left-import-cell" class="col-sm-12 col-md-6">
+			<h3>List of Company</h3>
+	<hr/>
+	<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      
+      <th scope="col">Company Name</th>
+      <th scope="col">CEO</th>
+      <th scope="col">Breif</th>
+	  <th scope="col">Turnover</th>
+	  <th scope="col">Stock Exchange</th>
+	  <th scope="col">Stock Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cognizant</td>
+      <td>Brian Humphries</td>
+      <td>Service Based</td>
+      <td>4.1 Billion</td>
+	  <td>BSE</td>
+	  <td>1001</td>
+	  <td><input type="submit" value="Deactivate"/></td>
+    </tr>
+	<tr>
+      <td>Google</td>
+      <td>Sunder Pichai</td>
+      <td>Product &Service Based</td>
+      <td>7 Billion</td>
+	  <td>BSE</td>
+	  <td>1002</td>
+	  <td><input type="submit" value="Deactivate"/></td>
+    </tr>
+	
+  </tbody>
+</table>
+			</div>
+			</div>
+		</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	</body>
+</html>	

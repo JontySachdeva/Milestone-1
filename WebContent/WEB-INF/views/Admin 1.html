@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Import Data</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+      <nav id="sidebar" class="navbar navbar-inverse >
+             <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+            <div class="sidebar-header">
+                <h2>Admin Features</h2>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a id="sidebarA" href="#"  >Import Data</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">Manage Company</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">Manage Exchange</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">IPO Details</a>
+                </li>
+				<li><button type="button" class="btn btn-dark" style="color:black;">Logout</button> </li>
+            </ul>
+      </nav>
+      <div class="wrapper">
+            <header>
+			
+
+                  <nav id="header1" >
+                    </button>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo" style="color:white;">
+                              Stock Exchange
+                        </div>
+
+                        <div class="menu">
+
+                              <ul>
+                                    <li><a href="#">Import Data</a></li>
+                                    <li><a href="#">Manage Company</a></li>
+                                    <li><a href="#">Manage Exchange</a></li>
+                                    <li><a href="#">IPO Details</a></li>
+									 <li><button type="button" class="btn btn-dark" style="color:black;">Logout</button> </li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+           
+
+
+
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('#dismiss').on('click', function () {
+            // hide sidebar
+            $('#sidebar').removeClass('active');
+        });
+
+            $(".menu-icon").on("click", function() {
+                  /*$("nav ul").toggleClass("showing");*/
+            $('#sidebar').toggleClass('active');
+            });
+      });
+      </script>
+	  
+	  <div id="container">
+	  <div class="row">
+		<div id ="left-import-cell" class="col-sm-12 col-md-6">
+		<h2>Import Excel</h2>
+			<hr/>
+			<h3>Select Excel file to be Uploaded</h3>
+			<br>
+				<br>
+				<form action="">
+			<button type="button" class="btn btn-info">Choose File</button>
+			<br>
+			<br>
+	
+				<!--<input type="submit" value="submit" name="choose"/> -->
+				<button type="button" class="btn btn-success">Submit</button>
+				</form>
+				<br>
+			<br>
+			<button onclick="document.getElementById('imageReplace').src='Sample.png'">Click here to Preview sample excel file</button>
+			</div>
+			<div id ="left-import-cell" class="col-sm-12 col-md-6">
+			<img src="excel.png"  id="imageReplace" alt="Excel File.Png">
+			</div>
+			</div>
+		</div>
+			
+			
+			
+			</div>
+
+
+</body>
+
+
+</body>
+</html>
+
+
+
+
+
+

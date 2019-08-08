@@ -1,0 +1,145 @@
+<html>
+	<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>IPO Planned</title>
+      <link rel="stylesheet" href="ManageCompanyStyle.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+	
+	<body>
+		 <nav id="sidebar">
+             <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+            <div class="sidebar-header">
+                <h2>Admin Features</h2>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a id="sidebarA" href="#">Import Data</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">Manage Company</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">Manage Exchange</a>
+                </li>
+                <li>
+                    <a id="sidebarA" href="#">IPO Details</a>
+                </li>
+				<li><button type="button" class="btn btn-dark" style="color:black;">Logout</button> </li>
+            </ul>
+      </nav>
+      <div class="wrapper">
+            <header>
+			
+
+                  <nav id="header1">
+                    </button>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo" style="color:white;">
+                              Stock Exchange
+                        </div>
+
+                        <div class="menu">
+
+                              <ul>
+                                    <li><a href="#">Import Data</a></li>
+                                    <li><a href="#">Manage Company</a></li>
+                                    <li><a href="#">Manage Exchange</a></li>
+                                    <li><a href="#">IPO Details</a></li>
+									<li><button type="button" class="btn btn-dark">Logout</button> </li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+           
+
+
+
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('#dismiss').on('click', function () {
+            // hide sidebar
+            $('#sidebar').removeClass('active');
+        });
+
+            $(".menu-icon").on("click", function() {
+                  /*$("nav ul").toggleClass("showing");*/
+            $('#sidebar').toggleClass('active');
+            });
+      });
+      </script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div id="container">
+	  <div class="row">
+		<div id ="right-import-cell" class="col-sm-12 col-md-12">
+		<h3>Add IPO Plan</h3>
+	<hr/>
+
+	<form id="ipoform">
+	<div class="container-fluid"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+            <div class="row" class="i-am-centered">
+                <div style="text-align:right" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                   <p id="pid">Company code:</p>
+					<p id="pid">Stock exchange Name:</p>
+					<p id="pid">Price pershare:</p>
+					<p id="pid">Total no of shares:</p>
+					<p id="pid">Open date time:</p>
+					<p id="pid">Remarks:</p>
+				   
+				   
+                </div>
+            <div style="text-align:left" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				
+				<input type="text" name="IPO_Name" placeholder="StockName"/><br><br>
+				<input type="text" name="IPO_Add" placeholder="Stock Exchange Name"/><br><br>
+				<input type="text" name="IPO_Price" placeholder="Price_per_share"/><br><br>
+				<input type="text" name="IPO_Shares" placeholder="Total no of shares"/><br><br>
+				<input type="text" name="IPO_Date" placeholder="Open date time"/><br><br>
+				<input type="text" name="IPO_Remarks" placeholder="Remarks"/><br><br>
+				<br><br>
+				<!--<input type="submit" value="Submit"/>-->
+				<button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+		</form>
+	
+			</div>
+			<div id ="left-import-cell" class="col-sm-12 col-md-6">
+				
+			</div>
+			</div>
+		</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	</body>
+</html>	
